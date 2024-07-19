@@ -16,7 +16,7 @@ const router = express.Router();
 
 //routing
 //REGISTER || METHOD POST
-router.post("/register", registerController);
+router.post("https://e-commerce-retail-api-main.vercel.app/register", registerController);
 
 //LOGIN || POST
 router.post("/login", loginController);
