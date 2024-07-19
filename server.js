@@ -20,7 +20,7 @@ const app = express();
 //middelwares
 app.use(cors(
   {
-    origin:["https://e-commerce-retail-api-main.vercel.app/"],
+    origin:["https://e-commerce-retail.vercel.app/"],
     methods:["POST","GET"],
     credentials:true
   }
