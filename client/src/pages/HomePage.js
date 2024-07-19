@@ -21,9 +21,10 @@ const HomePage = () => {
   const [loading, setLoading] = useState(false);
 
   //get all cat
+  axios.defaults.withCredentials=true;
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("/api/v1/category/get-category");
+      const { data } = await axios.get("https://e-commerce-retail.vercel.app/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
