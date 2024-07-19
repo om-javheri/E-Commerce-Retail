@@ -36,7 +36,7 @@ const CreateCategory = () => {
       // toast.error("somthing went wrong in input form");
     }
   };
-
+// 
   //get all cat
   const getAllCategory = async () => {
     try {
