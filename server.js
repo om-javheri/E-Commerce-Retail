@@ -23,8 +23,8 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 //routes
-app.use(`${process.env.API_URL}/api/v1/auth`, authRoutes);
-app.use(`${process.env.API_URL}/api/v1/category`, categoryRoutes);
+app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 //rest api
