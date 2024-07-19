@@ -36,11 +36,11 @@ const CreateCategory = () => {
       // toast.error("somthing went wrong in input form");
     }
   };
-// 
+
   //get all cat
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("https://e-commerce-retail-api-main.vercel.app/api/v1/category/get-category");
+      const { data } = await axios.get("/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
